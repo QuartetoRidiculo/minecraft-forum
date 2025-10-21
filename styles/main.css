@@ -1,3 +1,16 @@
+/* 
+verde escuro: #223a1d
+verde medio: #2e5117
+verde claro: #71cd71
+cinza claro: #cad9ca
+cor de fundo da main: #406d43
+marrom: #8b4513
+
+verde quase branco: #f8f9fa
+
+cinza escuro: #696969
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
@@ -12,7 +25,7 @@
     align-items: center;
     justify-content: space-around;
     height: 80px;
-    background-color: darkgreen;
+    background-color: #2e5117;
 }
 
 #header div {
@@ -26,7 +39,8 @@
 }
 
 #header h1 {
-    color: lightgreen;
+    color: #71cd71;
+    font-size: 28px;
 }
 
 #header ul {
@@ -37,24 +51,25 @@
 
 #header a {
     text-decoration: none;
-    font-size: 18px;
-    color: #f2f2f2;
+    color: white;
     transition-duration: 0.2s;
     padding: 8px;
 }
 
 #header a:hover {
-    color: lightgreen;
+    color: #71cd71;
 }
 
 .active {
-    border: 2px solid lightgreen;
-    background-color: green;
+    border: 2px solid #71cd71;
+    background-color: #3d6c2b;
     border-radius: 8px;
 }
 
 main {
     min-height: calc(100vh - 128px);
+    background-image: linear-gradient(to left, #3d6c2b, #406d43);
+    padding: 32px 64px;
 }
 
 #footer {
@@ -62,6 +77,6 @@ main {
     align-items: center;
     justify-content: center;
     height: 48px;
-    background-color: darkgreen;
+    background-color: #223a1d;
     color: white;
 }

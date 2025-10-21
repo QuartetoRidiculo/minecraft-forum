@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft Forum</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/styles/servers.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <script type="module" src="js/main.js" defer></script>
 </head>
@@ -13,7 +14,76 @@
 <body>
     <header id="header"></header>
     <main>
-        servidores
+        <section class="servers">
+            <div class="page-header">
+                <h1>Guia de Servidores</h1>
+                <p>Descubra os melhores servidores da comunidade brasileira</p>
+            </div>
+            <div class="servers-grid">
+                <div class="card">
+                    <div>
+                        <h3>CraftLandia</h3>
+                        <span>247 online</span>
+                    </div>
+                    <span class="server-type">Survival</span>
+                    <p>Servidor survival com economia, clans e eventos semanais. Comunidade ativa e staff dedicado.</p>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>BrazilCraft</h3>
+                        <span>189 online</span>
+                    </div>
+                    <span class="server-type">Minigames</span>
+                    <p>O melhor servidor de minigames do Brasil! SkyWars, BedWars, Murder Mystery e muito mais.</p>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>RPG Brasil</h3>
+                        <span>156 online</span>
+                    </div>
+                    <span class="server-type">RPG</span>
+                    <p>Aventure-se em um mundo RPG único com classes, magias, dungeons e uma história envolvente.</p>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Creative World</h3>
+                        <span>98 online</span>
+                    </div>
+                    <span class="server-type">Creative</span>
+                    <p>Libere sua criatividade! Plots gratuitos, WorldEdit e uma comunidade focada em construção.</p>
+                </div>
+            </div>
+            <div class="form-container">
+                <h2>Adicionar Novo Servidor</h2>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nome do Servidor</label>
+                        <input type="text" id="name" placeholder="Digite o nome do servidor" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Tipo</label>
+                        <select id="type" required>
+                            <option value="">Selecione o tipo</option>
+                            <option value="">Survival</option>
+                            <option value="">Creative</option>
+                            <option value="">Minigames</option>
+                            <option value="">RPG</option>
+                            <option value="">PvP</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+
+                        <label for="description">Descrição</label>
+                        <textarea id="description" placeholder="Descreva as principais características do servidor"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit">Adicionar Servidor</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer id="footer"></footer>
 </body>

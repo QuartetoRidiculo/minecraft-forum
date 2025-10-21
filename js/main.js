@@ -70,8 +70,8 @@ function footer() {
     const footer = document.getElementById("footer");
 
     const p = document.createElement("p");
-    p.textContent = "© 2025 Fórum Minecraft — Projeto desenvolvido por Alison Barbosa, Gustavo Travassos, Rodrigo Silveira e Darllan Cabral. Trabalho acadêmico da disciplina de Desenvolvimento Web — Unifacisa."
- 
+    p.textContent = "© 2025 Forum Minecraft — Trabalho acadêmico da disciplina de Desenvolvimento Web — Unifacisa."
+
     footer.appendChild(p);
 }
 
