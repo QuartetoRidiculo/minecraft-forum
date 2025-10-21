@@ -72,10 +72,12 @@ main {
     padding: 32px 64px;
 }
 
+
 #footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     height: 48px;
     background-color: #223a1d;
     color: white;
