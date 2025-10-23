@@ -69,7 +69,7 @@ cinza escuro: #696969
 main {
     min-height: calc(100vh - 128px);
     background-image: linear-gradient(to left, #3d6c2b, #406d43);
-    padding: 32px 64px;
+    padding: 32px 96px;
 }
 
 

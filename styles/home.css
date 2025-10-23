@@ -1,0 +1,90 @@
+section {
+    animation: slideDown 0.6s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 32px;
+    background-color: #223a1d;
+    color: white;
+    border-radius: 16px;
+}
+
+.page-header h1 {
+    font-size: 40px;
+}
+
+.page-header p {
+    color: #f8f9fa;
+}
+
+.page-header button {
+    background-color: #71cd71;
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 0px 16px hsla(120, 48%, 62%, 0.5);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.card-grid a {
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.card-grid a:hover {
+    transform: translateY(-5px);
+}
+
+.card {
+    width: 100%;
+    height: 250px;
+    padding: 32px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: -6px 0px 0px #71cd71;
+}
+
+.card img {
+    width: 64px;
+}
+
+.card h3 {
+    color: #223a1d;
+    margin-block: 8px;
+
+}
+
+.card p {
+    color: #696969;
+
+}

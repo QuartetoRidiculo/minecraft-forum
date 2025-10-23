@@ -1,7 +1,7 @@
 const links = [
     {
         title: "Home",
-        href: "/",
+        href: "/index.html",
     },
     {
         title: "Servidores",
