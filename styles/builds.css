@@ -1,3 +1,20 @@
+section {
+    animation: animatione 0.6s, ease-out;
+}
+
+@keyframes animatione {
+
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .page-header {
     color: white;
     display: flex;
@@ -40,8 +57,6 @@
     transition-duration: 0.5s;
 }
 
-
-
 .card:hover {
 
     /*     transform: translateY(-10px);
@@ -70,14 +85,12 @@
 }
 
 .card h2 {
-    color: #2e5117;;
-}
- .card p {
-    color: gray;
- }
-
-.card h2 {
+    color: #2e5117;
     margin-top: 26px;
+}
+
+.card p {
+    color: gray;
 }
 
 .card-grid {
