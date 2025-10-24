@@ -48,7 +48,7 @@ section {
 .card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    gap: 32px;
 }
 
 .card {
@@ -91,4 +91,16 @@ section {
 
 .card p {
     color: gray;
+}
+
+@media (max-width: 1028px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 748px) {
+    .card-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

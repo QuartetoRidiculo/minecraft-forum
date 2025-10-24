@@ -81,10 +81,20 @@ section {
 .card h3 {
     color: #223a1d;
     margin-block: 8px;
-
 }
 
 .card p {
     color: #696969;
+}
 
+@media (max-width: 748px) {
+    .card-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 1028px) and (min-width: 748px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

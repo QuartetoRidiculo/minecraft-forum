@@ -76,7 +76,7 @@ cinza escuro: #696969
 main {
     min-height: calc(100vh - 128px);
     background-image: linear-gradient(to left, #3d6c2b, #406d43);
-    padding: 32px 96px;
+    padding: 32px 64px;
 }
 
 
@@ -119,10 +119,6 @@ main {
         display: block;
         z-index: 2;
     }
-
-    /* main {
-        padding: 32px 16px;
-    } */
 }
 
 @media (max-width: 1028px) {
@@ -136,5 +132,9 @@ main {
 
     #header ul {
         font-size: 14px;
+    }
+
+    main {
+        padding: 32px 32px;
     }
 }
