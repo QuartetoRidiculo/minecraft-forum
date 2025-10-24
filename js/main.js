@@ -36,6 +36,8 @@ function header() {
     h1.textContent = "Minecraft Forum";
 
     const nav = document.createElement("nav");
+    nav.id = "nav";
+
     const ul = document.createElement("ul");
 
     for (const link of links) {
@@ -62,9 +64,44 @@ function header() {
 
     header.appendChild(div);
     header.appendChild(nav);
+    header.appendChild(menu_burger());
 }
 
 header();
+
+function menu_burger() {
+    const nav = document.getElementById("nav");
+    let isOpen = false;
+
+    const btn = document.createElement("button");
+    btn.className = "menu";
+
+    const img = document.createElement("img");
+    img.src = "img/menu-burger.png";
+    img.alt = "menu-burger"
+
+    btn.appendChild(img);
+
+    btn.addEventListener("click", () => {
+        isOpen = !isOpen;
+        img.src = isOpen ? "img/close.png" : "img/menu-burger.png";
+        nav.style.transform = isOpen ? "translateX(0)" : "translateX(100%)";
+    })
+
+    function handleResize() {
+        if (window.innerWidth > 748) {
+            nav.style.transform = "translateX(0)"
+        } else {
+            if (!isOpen) {
+                nav.style.transform = "translateX(100%)"
+            }
+        }
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return btn
+}
 
 function footer() {
     const footer = document.getElementById("footer");
