@@ -1,37 +1,46 @@
-
-#page-header{
-    display:flex;
+#page-header {
+    display: flex;
     flex-direction: column;
     color: white;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
-    gap: 8px;
-    
-   
-}
-#sub-title{
-    color: lightgray;
-    
-}
-
-
-.card{
-    background-color: white;
     margin-bottom: 32px;
-    padding: 12px;
-    border-radius: 10px;
-    color:gray;
+    gap: 16px;
 }
 
-.card h3{
-margin-bottom: 10px;
-color:#71cd71;
-;
+#page-header h1 {
+    font-size: 40px;
+}
+
+#page-header p {
+    color: #f8f9fa;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card {
+    background-color: white;
+    padding: 32px 16px;
+    border-radius: 10px;
+    box-shadow: -6px 0px 0px #71cd71;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #223a1d;
+}
+
+.card span {
+    color: #696969;
+    font-size: 14px;
 }
 
 .card p {
+    color: #696969;
     margin-top: 10px;
     margin-bottom: 10px;
-    
 }
