@@ -32,7 +32,7 @@ Veja quem se destaca na comunidade:
 - Atualizado automaticamente!
 
 ### **Alunos:**
-- Darllan Cabral
-- Gustavo Travassos
-- José Alison
-- Rodrigo Silveira
+- Darllan Cabral Sousa      
+- Gustavo Travassos Barbosa
+- José Alison Barbosa da Silva
+- Rodrigo Silveira Silva
